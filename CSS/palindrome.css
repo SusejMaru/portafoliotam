@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.contenedor{
+    text-align: center;
+    align-items: center;
+}
+
+.logo{
+    height: 30px;
+    margin-bottom: 20px;
+}

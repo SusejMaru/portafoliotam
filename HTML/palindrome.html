@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/palindrome.css">
+    <title>Palindrome</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¿Es un Palindrome?</h1>
+        <h2>Ingresa una palabra para validar</h1>
+            <img class="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="">
+            <div class="caja">
+                <input type="text" id="text-input">
+                <button id="check-btn">Check</button>
+                <div id="result"></div>
+            </div>
+    </div>
+    <script>
+   document.getElementById("check-btn").addEventListener("click", function() {
+    const inputText = document.getElementById("text-input").value;
+    const resultDiv = document.getElementById("result");
+  
+    if (inputText === "") {
+      alert("Ingresa una palabra para validar");
+    } else {
+      const processedText = inputText.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+      const reversedText = processedText.split("").reverse().join("");
+  
+      if (processedText === reversedText) {
+        resultDiv.textContent = inputText + " Es palindrome";
+      } else {
+        resultDiv.textContent = inputText + " No es palindrome";
+      }
+    }
+  });
+  
+    </script>
+</body>
+</html>

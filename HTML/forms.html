@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>
+                Free code camp Survey Form
+            </h1>
+            <p>
+                Gracias por tomar un poco de tu tiempo para responder
+            </p>
+        </header>
+        <form >
+            <div class="tamal">
+            <div class="forms">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="forms">
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu correo electronico" required>
+            </div>
+            <div class="forms">
+                <label for="numer"> Edad</label>
+                <span>Opcional</span>
+                <input type="number" name="age" id="age" min="18" max="99" placeholder="Ingresa tu Edad">
+            </div>
+            <div class="forms">
+                <p>Que opcion describe mejor tu rol</p>
+                <select name="role" id="role">
+                    <option value="estudiante">estudiante</option>
+                    <option value="profesor">profesor</option>
+                    <option value="aprendiz">aprendiz</option>
+                    <option value="prefiero">prefiero no decir</option>
+                    <option value="otro">otro</option>
+                </select>
+            </div>
+            <div class="forms">
+                <label>
+                <input type="radio" name="recomend" checked>
+                Definitivamente
+                </label>
+                <label>
+                    <input type="radio" name="talvez">
+                    Tal vez
+                    </label>
+                    <label>
+                        <input type="radio" name="nocreo">
+                        No creo
+                        </label>
+            </div>
+            <div class="forms">
+                <p>¿Cual es tu caracteristica favorita de FreeCodeCamp</p>
+                <select name="like" id="like" required>
+                    <option disabled selected value>Selecciona una opcion</option>
+                    <option value="retos">retos</option>
+                    <option value="proyectos">proyectos</option>
+                    <option value="comunidad">comunidad</option>
+                </select>
+            </div>
+            <div class="forms">
+
+                <p>Que es lo que te gustaria que mejoremos </p>
+                <label>
+                <input type="checkbox" name="prefer" id="prefer">
+                Front-end Proyects
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="prefer">
+                    Back-end Proyects
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="prefer">
+                    Data
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="prefer">
+                    Retos
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="prefer">
+                    Comunidad
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="prefer">
+                    Videos
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="prefer">
+                    Wiki
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="prefer">
+                    Forum
+                </label>
+            </div>
+            <div class="forms">
+                <p>¿Algun comentario?</p>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Ingresa algunos comentarios si tienes"></textarea>
+            </div>
+            <div class="forms">
+                <button type="submit" class="submit">Guardar</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
